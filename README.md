@@ -14,10 +14,10 @@ This is a challenge on [Frontend Mentor](https://www.frontendmentor.io/), it's a
 #### Crew page
 ![crewpage](./crew-page.PNG)
 #### Technology page
-![crewpage](./crew-page.PNG)
+![crewpage](./technology-page.PNG)
 *****
 ### Mobile
 ![homepage_mobile](./homepage-mobile.PNG)
-![destinationpage_mobile](./destination-page-mobile.PNG)
 ![crewpage_mobile](./crew-page-mobile.PNG)
+![destinationpage_mobile](./destination-page-mobile.PNG)
 ![technology_mobile](./technology-page-mobile.PNG)
