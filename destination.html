@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./destination-style.css">
+</head>
+
+<body>
+  <div class="destinationpage-bg"></div>
+  <header>
+    <div class="container-fluid">
+      <div class="header-holder flex justify-between align-items-center
+      ">
+        <a href="#">
+          <div class="logo">
+            <img src="./assets/shared/logo.svg" alt="">
+          </div>
+        </a>
+        <div id="toggle-nav">
+          <img src="./assets/shared/icon-hamburger.svg" alt="">
+        </div>
+        <nav id="navbar">
+          <div id="close-navbar">
+            <img src="./assets/shared/icon-close.svg" alt="">
+          </div>
+          <ul id="menutop">
+            <li><a href="./index.html" class="nav-text"><span class="strong-number">00</span>Home</a>
+            </li>
+            <li class="active"><a href="./destination.html" class="nav-text"><span
+                  class="strong-number">01</span>Destination</a>
+            </li>
+            <li><a href="./crew.html" class="nav-text"><span class="strong-number">02</span>Crew</a></li>
+            <li><a href="./technology.html" class="nav-text"><span class="strong-number">03</span>Technology</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main id="destination">
+     
+    <div class="container">
+      <div class="flex justify-between planet-infor ">
+        <div class="planet-holder">
+          <h5 class="heading-5 text-title">
+            <span class="weak-number">01</span>
+            Pick your destination
+          </h5>
+          <div class="planet-image">
+            <img id="planet-img" src="./assets/destination/image-moon.webp" alt="">
+          </div>
+        </div>
+        <div class="planet-des">
+          <ul class="planet-nav">
+            <li class="active" data-planet="moon"><a href="#">Moon</a></li>
+            <li data-planet="mars"><a href="#">Mars</a></li>
+            <li data-planet="europa"><a href="#">Europa</a></li>
+            <li data-planet="titan"><a href="#">titan</a></li>
+          </ul>
+          <h2 id="planet-title" class="heading-2 text-uppercase">
+            moon
+          </h2>
+          <p class="text-blue" id="planet-description">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and
+            come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
+            sites.
+          </p>
+          <div class="underline"></div>
+          <div class="detail-planet flex justify-between align-items-center">
+            <div class="evg">
+              <p class="text-uppercase text-blue">
+                Avg. distance
+              </p>
+              <h5 id="planet-evg">384,400 km</h5>
+            </div>
+            <div class="est">
+              <p class="text-uppercase text-blue">
+                Est. travel time
+              </p>
+              <h5 id="planet-est">3 days</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+  <script src="./destination.js"></script>
+</body>
+
+</html>

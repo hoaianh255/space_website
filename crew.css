@@ -1,0 +1,112 @@
+.crew-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+}
+
+.crew-description {
+  width: 50%;
+  flex-direction: column;
+}
+.person-info {
+  margin-top: 150px;
+}
+.crew-position {
+  margin-bottom: 15px;
+}
+.crew-name {
+  margin-bottom: 27px;
+}
+.dots {
+  margin-top: 120px;
+}
+.crew-content {
+  column-gap: 140px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.crew-big-img img {
+  max-width: 568px;
+  max-height: 680px;
+}
+
+/* swiper */
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 150px;
+  left: 0px;
+  width: 200px;
+}
+.swiper-pagination-bullet {
+  background: var(--color-white);
+}
+/* end swiper */
+@media screen and (max-width: 1112px) {
+  .crew-bg {
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+  }
+  .crew-content {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 120px;
+  }
+  .person-info {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .crew-position {
+    margin-bottom: 8px;
+  }
+  .crew-name {
+    margin-bottom: 15px;
+  }
+  .crew-big-img img {
+    max-width: 456px;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  .dots {
+    margin-top: 40px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 380px;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .crew-bg {
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+  }
+  .crew-big-img {
+    order: 1;
+    margin-top: 30px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 320px;
+  }
+  .crew-big-img img {
+    width: 327px;
+    height: 223px;
+  }
+  .crew-description {
+    order: 2;
+  }
+  .person-info {
+    order: 2;
+  }
+  .crew-content {
+    row-gap: 0;
+  }
+}

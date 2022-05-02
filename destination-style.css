@@ -1,0 +1,159 @@
+.destinationpage-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+}
+
+.planet-holder .heading-5 {
+  text-transform: uppercase;
+  margin-bottom: 95px;
+}
+.planet-image {
+  width: 445px;
+  height: 445px;
+  margin-left: 64px;
+}
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 60px;
+  margin-bottom: 28px;
+}
+.planet-image img {
+  width: 100%;
+  animation: rotatePlanet 15s infinite ease;
+}
+.planet-des,
+.planet-holder {
+  width: 445px;
+}
+/* .planet-des {
+  align-self: flex-end;
+} */
+.planet-des p {
+  font-weight: 400;
+  /* text-align: justify; */
+  line-height: 32px;
+  font-size: 18px;
+  font-family: var(--font-barlow-condensed);
+}
+.planet-nav li {
+  display: inline-block;
+  margin-right: 30px;
+  height: 34px;
+}
+.planet-nav li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+.planet-nav li.active {
+  border-bottom: 3px solid var(--color-white);
+}
+.planet-nav li:last-child {
+  margin-right: 0;
+}
+
+.planet-nav li a {
+  text-transform: uppercase;
+  color: var(--color-lightblue);
+  font-size: 16px;
+  font-family: var(--font-barlow-condensed);
+  letter-spacing: 2.7px;
+}
+.planet-nav li.active a {
+  color: var(--color-white);
+}
+.evg p,
+.est p {
+  margin-bottom: 12px;
+}
+.evg p,
+.est p {
+  font-family: var(--font-barlow-condensed);
+  letter-spacing: 2.36px;
+}
+.evg h5,
+.est h5 {
+  font-size: 28px;
+  font-family: var(--font-bellefair);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* animation */
+@keyframes rotatePlanet {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* end animation */
+/* responsive to tablet */
+@media screen and (max-width: 1112px) {
+  .destinationpage-bg {
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  }
+  .planet-image {
+    width: 300px;
+    margin-left: 0;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .planet-infor {
+    flex-direction: column;
+  }
+  .planet-holder .heading-5 {
+    margin-bottom: 50px;
+  }
+  .planet-des,
+  .planet-holder {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+  .planet-des {
+    align-self: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .detail-planet {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .underline {
+    margin-top: 50px;
+    margin-bottom: 28px;
+  }
+  .planet-des p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .evg,
+  .est {
+    text-align: center;
+  }
+  .evg p,
+  .est p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .detail-planet {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .destinationpage-bg {
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+  }
+}
